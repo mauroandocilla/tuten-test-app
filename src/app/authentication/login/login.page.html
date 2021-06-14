@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tuten | Inicio de sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="loginForm" (ngSubmit)="onLogin()" novalidate>
+    <ion-item lines="full">
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input formControlName="user" type="text"></ion-input>
+    </ion-item>
+    <div class="error ion-padding" *ngIf="submitted && loginForm.controls.user.errors?.required">
+      Campo requerido
+    </div>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input formControlName="pass" type="password"></ion-input>
+    </ion-item>
+    <div class="error ion-padding" *ngIf="submitted && loginForm.controls.pass.errors?.required">
+      Campo requerido
+    </div>
+
+    <ion-item lines="full">
+      <ion-label position="floating">App</ion-label>
+      <ion-input formControlName="app" type="text"></ion-input>
+    </ion-item>
+    <div class="error ion-padding" *ngIf="submitted && loginForm.controls.app.errors?.required">
+      Campo requerido
+    </div>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Ingresar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

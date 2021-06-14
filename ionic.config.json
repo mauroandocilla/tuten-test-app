@@ -1,0 +1,7 @@
+{
+  "name": "TutenApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
