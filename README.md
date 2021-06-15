@@ -1,5 +1,7 @@
 # tuten-test-app
 
+Desarollado por: Mauro Andocilla
+
 ## Desarrollo de una aplicación mobile
 
 Se requiere el desarrollo de una App mobile desarrollada usando Angular 6 o similar
